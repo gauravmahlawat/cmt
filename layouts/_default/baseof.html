@@ -12,46 +12,6 @@
   {{ end }}
   <meta name="robots" content="index, follow">
 
-  <meta http-equiv='Content-Security-Policy' content="default-src 'self';
-        style-src 'self' 'unsafe-inline';
-        object-src 'none';
-        font-src 'self' data:;
-        connect-src https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net ws://localhost:1313 https://pagead2.googlesyndication.com;
-        script-src
-            'self'
-            https://www.googletagmanager.com
-            https://pagead2.googlesyndication.com
-            https://partner.googleadservices.com
-            https://googleads.g.doubleclick.net
-            https://www.google-analytics.com;
-        img-src
-            'self'
-            'unsafe-inline'
-            'unsafe-eval'
-            https://www.google-analytics.com
-            https://stats.g.doubleclick.net
-            https://pagead2.googlesyndication.com;
-        script-src-elem
-          'self'
-          'unsafe-inline'
-          'unsafe-eval'
-          https://www.googletagmanager.com
-          https://pagead2.googlesyndication.com
-          https://partner.googleadservices.com
-          https://googleads.g.doubleclick.net
-          https://tpc.googlesyndication.com/
-          https://www.google-analytics.com;
-        frame-src
-          'self'
-          'unsafe-inline'
-          'unsafe-eval'
-          https://pagead2.googlesyndication.com
-          https://googleads.g.doubleclick.net
-          https://partner.googleadservices.com
-          https://tpc.googlesyndication.com/
-          https://www.google.com/
-          https://docs.google.com;
-        ">
 </head>
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
@@ -65,10 +25,6 @@
     <!-- Mobile layout header -->
   </header>
   {{ partial "docs/desktop-header" . }}
-  <!-- {{ if .IsHome }} -->
-  {{ partial "docs/banner" . }}
-  {{ partial "docs/services" . }}
-  <!-- {{ end }} -->
   <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
     <aside class="book-menu">
@@ -81,46 +37,20 @@
         </label>
         {{ template "menu" . }}
         <!-- Left menu Content -->
-
-        <!-- Related articles section for all pages, except homepage and docs page -->
-        {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-        <section class="block share-block-desktop">
-          {{ partial "docs/share-this" . }}
-        </section>
-        {{ end }}
       </div>
     </aside>
 
     <div class="book-page">
+      {{ if .IsHome }}
+        {{ partial "docs/convert-text" . }}
+      {{ end }}
+
       {{ if not .IsHome }}
 
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }}
       <!-- Page Content -->
       {{ partial "docs/inject/content-after" . }}
-      {{ end }}
-
-      <!-- Test series block for homepage -->
-      {{ if .IsHome }}
-      <section class="block">
-        {{ partial "docs/trending" . }}
-      </section>
-
-      <section class="block">
-        {{ partial "docs/top-categories" . }}
-      </section>
-
-      <section class="block">
-        {{ partial "docs/test-series" . }}
-      </section>
-
-      <section class="block">
-        {{ partial "docs/our-services" . }}
-      </section>
-
-      <section class="block">
-        {{ partial "docs/blogs" . }}
-      </section>
       {{ end }}
 
 
@@ -179,20 +109,8 @@
 
   {{ partial "docs/inject/body" . }}
 </body>
-<script defer src="{{ "footer.js" | relURL }}"></script>
-<script async defer
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
-crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-TJQBWKV5T1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-
-gtag('config', 'G-TJQBWKV5T1');
-</script>
+<script src="{{ "custom.js" | relURL }}"></script>
 
 </html>
 

@@ -1,11 +1,11 @@
 languageCode = 'en-us'
-title = 'Xamin'
+title = 'cmt'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
 enableRobotsTXT = true
 
 [params]
-    BookRepo = 'https://github.com/gauravmahlawat/xamin'
+    BookRepo = 'https://github.com/gauravmahlawat/cmt'
     BookEditPath = 'edit/main'
 
 [module]

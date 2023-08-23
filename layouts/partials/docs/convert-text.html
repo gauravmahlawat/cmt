@@ -1,0 +1,22 @@
+<div id="message" class="messgae"></div>
+<form action="/" method="post" class="textarea--controls">
+    <div class="row">
+        <textarea id="content" placeholder="tYPE OR pASTE yOUR cONTENT hERE" autofocus="">
+        </textarea>
+    </div>
+</form>
+
+<div class="actions">
+    <button id="sentence" class="btn">Sentence case</button> 
+    <button id="lower" class="btn">lower case</button> 
+    <button id="upper" class="btn">UPPER CASE</button>
+    <button id="capitalized" class="btn">Capitalized Case</button>
+    <button id="alternating" class="btn">aLtErNaTiNg cAsE</button> 
+    <button id="title" class="btn">Title Case</button> 
+    <button id="inverse" class="btn">InVeRsE CaSe</button> 
+    <button id="download" class="btn" data-download-target="#content" style="display: inline-block;">Download Text</button>
+    <button id="copy" class="btn" data-clipboard-target="#content">Copy to Clipboard</button> 
+    <button id="clear" class="btn">Clear</button> 
+</div>
+
+<div class="row counts">Character Count: <span id="char_count">0</span> | Word Count: <span id="word_count">0</span> | Line Count: <span id="line_count">0</span></div>

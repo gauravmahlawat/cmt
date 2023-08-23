@@ -1,7 +1,7 @@
 {
-  "name": "xamin",
+  "name": "cmt",
   "version": "1.0.0",
-  "repository": "https://github.com/gauravmahlawat/xamin.git",
+  "repository": "https://github.com/gauravmahlawat/cmt.git",
   "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "lint-fix:md": "markdownlint {content,archetypes}/**/*.md --fix --ignore node_modules",

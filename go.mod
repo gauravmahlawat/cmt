@@ -1,4 +1,4 @@
-module github.com/gauravmahlawat/xamin
+module github.com/gauravmahlawat/cmt
 
 go 1.19
 
