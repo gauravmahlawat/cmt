@@ -16,15 +16,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/Gilroy-Medium.woff2') format('woff2'),
-    url('Gilroy-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   font-family: 'Gilroy';
   text-rendering: unset;
@@ -98,7 +89,7 @@ textarea {
 
     .output {
       width: 100%;
-      height: 176px;
+      min-height: 176px;
       margin-bottom: 15px;
       padding: 10px;
       border: 0;
@@ -106,6 +97,7 @@ textarea {
       border-top: 3px solid #c2c2c2;
       background: #fff;
       display: block;
+      height: auto;
     }
   }
 }

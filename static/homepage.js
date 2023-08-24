@@ -86,19 +86,22 @@ function toAlternatingCase(text) {
     return alternatingText;
 }
 
-document.getElementById("title").addEventListener("click", function() {
-    var contentElement = document.getElementById("content");
-    var content = contentElement.value;
-
-    var titleCaseText = toTitleCase(content);
-
-    contentElement.value = titleCaseText;
-});
-
 function toTitleCase(text) {
-    const titleCase = require('title-case');
-    return titleCase(text);
+    return text.replace(/\b\w+/g, function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    });
 }
+
+window.onload = function() {
+    var titleElement = document.getElementById("title");
+    var contentElement = document.getElementById("content");
+
+    titleElement.addEventListener("click", function() {
+        var content = contentElement.value;
+        var titleCaseText = toTitleCase(content);
+        contentElement.value = titleCaseText;
+    });
+};
 
 document.getElementById("inverse").addEventListener("click", function() {
     var contentElement = document.getElementById("content");

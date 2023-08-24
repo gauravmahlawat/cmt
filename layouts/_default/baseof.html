@@ -83,6 +83,38 @@
   <script src="{{ "italic.js" | relURL }}"></script>
 {{ end }}
 
+{{ if eq .Type "underline" }}
+  <script src="{{ "underline.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "mirror" }}
+  <script src="{{ "mirror.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "unicode" }}
+  <script src="{{ "unicode.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "bubble" }}
+  <script src="{{ "bubble.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "sentence" }}
+  <script src="{{ "sentence.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "glitch" }}
+  <script src="{{ "glitch.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "invisible" }}
+  <script src="{{ "invisible.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "repeat" }}
+  <script src="{{ "repeat.js" | relURL }}"></script>
+{{ end }}
+
 </html>
 
 {{ define "main" }}

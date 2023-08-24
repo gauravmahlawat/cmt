@@ -1,0 +1,25 @@
+<div class="messages message" id="message"></div>
+<div class="col--wrapper">
+    <div class="col">
+        <textarea id="content" placeholder="Type or paste your content here" autofocus="">
+        </textarea>
+        <div class="row counts">Character Count:
+            <span id="char_count">0</span>
+            | Word Count: <span id="word_count">0</span>
+            | Line Count: <span id="line_count">0</span>
+            | Reading Time: <span id="reading_time">0</span> minutes
+        </div>
+    </div>
+
+<div class="output--wrapper">
+    <div id="output" class="output strike">
+
+    </div>
+
+    <div class="btn">
+        <button id="download" class="btn" data-download-target="#output" data-download-type="innerText"
+            style="display: inline-block;">Download Text</button>
+        <button id="copy" class="btn" data-clipboard-target="#output">Copy to Clipboard</button>
+    </div>
+</div>
+    
