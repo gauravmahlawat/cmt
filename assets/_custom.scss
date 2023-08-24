@@ -20,6 +20,25 @@ body {
   font-family: 'Gilroy';
   text-rendering: unset;
   -webkit-font-smoothing: unset;
+  margin: 0;
+  color: #313637;
+  background-color: #f7f9fa;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  transition: background-size 0.2s,color 0.2s;
+  text-decoration: none;
+  color: #0d1214;
+  background-color: transparent;
+  background-image: linear-gradient(#2494db,#2494db);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0 0.1875rem;
+  &:hover {
+    color: #0d77b5;
+  }
 }
 
 // CMT CSS
@@ -109,4 +128,33 @@ textarea {
 #output.strike {
     text-decoration: line-through;
     font-family: sans-serif;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+/* Style for the "More Tools" button */
+.more-tools {
+    display: none;
+    position: relative;
+}
+
+/* Show the submenu on hover */
+.more-tools:hover .submenu {
+    display: block;
+}
+
+/* Style for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
 }

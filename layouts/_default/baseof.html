@@ -16,6 +16,8 @@
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
   class="homepage" {{ end }} {{ if eq .Type "contact" }} class="contact-page" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
+
+  {{ partial "docs/header" . }}
   <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
     <div class="book-page">

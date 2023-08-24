@@ -1,19 +1,26 @@
-<div class="flex align-center justify-between">
-  <a href="{{ "" | relURL }}">
+<header class="header flex align-center justify-between">
+  <!-- <a href="{{ "" | relURL }}">
     <img src="{{ "svg/cmt.svg" | relURL }}" alt="cmt logo" />
-  </a>
-
-  <label for="menu-control">
-    <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
-  </label>
-
-  <!-- <label for="toc-control">
-    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <img
-      src="{{ "svg/toc.svg" | relURL }}"
-      class="book-icon"
-      alt="Table of Contents"
-    />
-  {{ end }}
-  </label> -->
-</div>
+  </a> -->
+  <ul class="js header-menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <li itemprop="name"><a itemprop="url" href="{{ "" | relURL }}">Convert <br>My text</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "small-text-generator" | relURL }}">Small Text <br> Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "wide-text-generator" | relURL }}">Wide Text <br> Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "strikethrough-text-generator" | relURL}}">Strikethrough <br>Text  Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "reverse-text-generator" | relURL }}">Reverse Text <br>Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "upside-down-text-generator" | relURL }}">Upside-down<br> Text Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "morse-code-translator" | relURL }}">Morse Code <br>Translator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "binary-code-translator" | relURL }}">Binary Code <br> Translator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "title-case-converter" | relURL }}">Title Case <br>Converter</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "bold-text-converter" | relURL }}">Bold Text<BR> Converter</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "italic-text-converter" | relURL }}">Italic Text <BR>Converter</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "underline-text-generator" | relURL }}">Underline <BR>Text Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "mirror-text-generator" | relURL }}">Mirror Text<BR> Generator</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "unicode-text-converter" | relURL }}">Unicode Text<BR> Converter</a></li>
+    <li itemprop="name"><a itemprop="url" href="{{ "bubble-text-generator" | relURL }}">Bubble Text<BR> Generator</a></li>
+      <li itemprop="name"><a itemprop="url" href="{{ "sentence-case-convertor" | relURL }}">Sentence Case<BR> Convertor</a></li>
+      <li itemprop="name"><a itemprop="url" href="{{ "glitch-text-converter" | relURL }}">Glitch Text<BR> Generator</a></li>
+      <li itemprop="name"><a itemprop="url" href="{{ "invisible-text-generator" | relURL }}">Invisible Text<BR> Generator</a></li>
+      <li itemprop="name"><a itemprop="url" href="{{ "repeat-text-generator" | relURL }}">Repeat Text<BR> Generator</a></li>
+  </ul>
+</header>
