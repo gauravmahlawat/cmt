@@ -1499,11 +1499,15 @@ section.contact-services {
 
 // CMT CSS
 
+textarea {
+  border: 1px solid #c2c2c2;
+  border-top: 3px solid #c2c2c2;
+  padding: 10px;
+}
+
 .textarea--controls textarea {
   width: 100%;
   height: 200px;
-  padding: 16px;
-  resize: unset;
 }
 
 .textarea--controls textarea::placeholder {
@@ -1539,4 +1543,44 @@ section.contact-services {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 4px;
+}
+
+.counts {
+  margin-top: 15px;
+}
+
+.col--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .col, .output--wrapper {
+    flex: 0 calc(50% - 10px);
+
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
+
+    .output {
+      width: 100%;
+      height: 176px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 0;
+      border: 1px solid #c2c2c2;
+      border-top: 3px solid #c2c2c2;
+      background: #fff;
+      display: block;
+    }
+  }
+}
+
+.copy {
+  width: 14px;
+}
+
+#output {
+    text-decoration: line-through;
+    font-family: sans-serif;
 }

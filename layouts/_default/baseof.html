@@ -27,19 +27,6 @@
   {{ partial "docs/desktop-header" . }}
   <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        <label for="menu-control" class="menu-close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-            <path fill="white"
-              d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
-          </svg>
-        </label>
-        {{ template "menu" . }}
-        <!-- Left menu Content -->
-      </div>
-    </aside>
-
     <div class="book-page">
       {{ if .IsHome }}
         {{ partial "docs/convert-text" . }}
@@ -53,53 +40,8 @@
       {{ partial "docs/inject/content-after" . }}
       {{ end }}
 
-
-      {{ if not .IsHome }}
-      <footer class="book-footer">
-        {{ template "footer" . }}
-        <!-- Footer under page content -->
-        {{ partial "docs/inject/footer" . }}
-      </footer>
-      {{ end }}
-
-      <!-- Related articles section for all pages, except homepage and docs page -->
-      {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-      <section class="block share-block-mobile">
-        {{ partial "docs/share-this" . }}
-      </section>
-      {{ end }}
-
-      {{ template "comments" . }}
-      <!-- Comments block -->
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-
-    {{ if not .IsHome }}
-    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        {{ template "toc" . }}
-        <!-- Table of Contents -->
-      </div>
-    </aside>
-    {{ end }}
-    {{ end }}
   </main>
-
-    <!-- Our services on contact page -->
-    {{ if (eq .Type "contact") }}
-    <section class="block container margin-auto contact-services">
-      {{ partial "docs/top-categories" . }}
-    </section>
-    {{ end }}
-
-  <!-- Related articles section for all pages, except homepage and docs page -->
-  {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-  <section class="block">
-    {{ partial "docs/related-articles" . }}
-  </section>
-  {{ end }}
 
 
   <!--Footer bottom containing navigation links-->
@@ -110,7 +52,23 @@
   {{ partial "docs/inject/body" . }}
 </body>
 
-<script src="{{ "custom.js" | relURL }}"></script>
+<script src="{{ "global.js" | relURL }}"></script>
+{{ if .IsHome }}
+  <script src="{{ "homepage.js" | relURL }}"></script>
+{{ end }}
+
+
+{{ if eq .Type "smallcaseconvertor" }}
+  <script src="{{ "small-case-converter.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "widecaseconvertor" }}
+  <script src="{{ "wide-text.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "strikethroughcaseconvertor" }}
+  <script src="{{ "strikethrough-text.js" | relURL }}"></script>
+{{ end }}
 
 </html>
 

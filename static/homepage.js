@@ -165,3 +165,20 @@ function clearMessage() {
     messageElement.textContent = "";
     messageElement.className = "message";
 }
+
+document.getElementById("download").addEventListener("click", function() {
+    var content = document.getElementById("content").value;
+    
+    var blob = new Blob([content], { type: "text/plain" });
+    var url = URL.createObjectURL(blob);
+    
+    var link = document.createElement("a");
+    link.href = url;
+    link.download = "text_file.txt";
+    document.body.appendChild(link);
+    
+    link.click();
+    
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+});
