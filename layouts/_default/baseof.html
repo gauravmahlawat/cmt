@@ -16,15 +16,6 @@
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
   class="homepage" {{ end }} {{ if eq .Type "contact" }} class="contact-page" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
-  <label class="hidden" for="menu-control">menu control</label>
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <label class="hidden" for="toc-control">Table of Contents</label>
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <header class="book-header container">
-    {{ template "header" . }}
-    <!-- Mobile layout header -->
-  </header>
-  {{ partial "docs/desktop-header" . }}
   <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
     <div class="book-page">
@@ -44,12 +35,6 @@
   </main>
 
 
-  <!--Footer bottom containing navigation links-->
-  <footer class="footer">
-    {{ partial "docs/footer-navigation" . }}
-  </footer>
-
-  {{ partial "docs/inject/body" . }}
 </body>
 
 <script src="{{ "global.js" | relURL }}"></script>
@@ -70,33 +55,35 @@
   <script src="{{ "strikethrough-text.js" | relURL }}"></script>
 {{ end }}
 
+{{ if eq .Type "reversecaseconvertor" }}
+  <script src="{{ "reverse-case.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "upsidedown" }}
+  <script src="{{ "upside-down.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "morsecode" }}
+  <script src="{{ "morse-code.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "binary" }}
+  <script src="{{ "binary.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "titlecase" }}
+  <script src="{{ "title-case.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "bold" }}
+  <script src="{{ "bold.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "italic" }}
+  <script src="{{ "italic.js" | relURL }}"></script>
+{{ end }}
+
 </html>
-
-{{ define "menu" }}
-{{ partial "docs/menu" . }}
-{{ end }}
-
-{{ define "header" }}
-{{ partial "docs/header" . }}
-
-{{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-<aside class="hidden clearfix">
-  {{ template "toc" . }}
-</aside>
-{{ end }}
-{{ end }}
-
-{{ define "footer" }}
-{{ partial "docs/footer" . }}
-{{ end }}
-
-{{ define "comments" }}
-{{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
-<div class="book-comments">
-  {{- partial "docs/comments" . -}}
-</div>
-{{ end }}
-{{ end }}
 
 {{ define "main" }}
 {{ if .IsHome }}
@@ -105,8 +92,4 @@
 <article class="markdown">
   {{- .Content -}}
 </article>
-{{ end }}
-
-{{ define "toc" }}
-{{ partial "docs/toc" . }}
 {{ end }}
