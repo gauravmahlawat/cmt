@@ -21,17 +21,17 @@
   <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
     <div class="book-page">
-      {{ if .IsHome }}
-        {{ partial "docs/convert-text" . }}
-      {{ end }}
-
-      {{ if not .IsHome }}
 
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }}
       <!-- Page Content -->
       {{ partial "docs/inject/content-after" . }}
+
+      {{ if .IsHome }}
+        {{ partial "docs/convert-text" . }}
       {{ end }}
+
+      {{ partial "docs/footer-top" . }}
 
     </div>
   </main>
@@ -120,9 +120,6 @@
 </html>
 
 {{ define "main" }}
-{{ if .IsHome }}
-<div class="desktop-banner">{{ partial "docs/banner" . }}</div>
-{{ end }}
 <article class="markdown">
   {{- .Content -}}
 </article>
