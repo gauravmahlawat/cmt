@@ -18,9 +18,15 @@
   class="homepage" {{ end }} {{ if eq .Type "contact" }} class="contact-page" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
 
   {{ partial "docs/header" . }}
-  <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
+  <main class="flex mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
-    <div class="book-page">
+    <div class="social-bar">
+      <div class="rotate">
+        {{ partial "docs/share-this" . }}
+      </div>
+    </div>
+
+    <div class="book-page container">
 
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }}
@@ -35,6 +41,7 @@
 
     </div>
   </main>
+  {{ partial "docs/footer" . }}
 
 
 </body>

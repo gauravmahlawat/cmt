@@ -1,10 +1,5 @@
 <h2 class="share-buttons--title">
-  Share this article
-  <img
-    class="share-icon"
-    src="{{ "images/share.svg" | relURL }}"
-    alt="share icon"
-  />
+  Share This
 </h2>
 <div class="share-buttons">
   <a
@@ -49,23 +44,3 @@
   </a>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const socialButtons = document.querySelectorAll('.share-buttons a');
-
-    socialButtons.forEach((button) => {
-      button.addEventListener('click', function () {
-        const socialMediaPlatform = button.getAttribute('class').split('-')[0]; // Extract platform from class
-        const socialMediaAction = 'social_share';
-        const socialMediaLabel = socialMediaPlatform;
-
-        // Send the event to Google Analytics
-        gtag('event', socialMediaAction, {
-          event_category: 'social_share',
-          event_label: socialMediaLabel,
-          event_action: 'click',
-        });
-      });
-    });
-  });
-</script>
