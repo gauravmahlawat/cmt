@@ -29,7 +29,9 @@
       </button>
       <span data-drupal-selector="primary-nav-menu-🥕" class="primary-nav__menu-🥕 is-active-menu-parent"></span>
       <ul>
+        {{ if not .IsHome }}
         <li itemprop="name"><a itemprop="url" href="{{ "" | relURL }}">Convert My text</a></li>
+        {{ end }}
         <li itemprop="name"><a itemprop="url" href="{{ "small-text-generator" | relURL }}">Small Text 
             Generator</a></li>
         <li itemprop="name"><a itemprop="url" href="{{ "wide-text-generator" | relURL }}">Wide Text  Generator</a>
