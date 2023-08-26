@@ -1,0 +1,33 @@
+<div class="col--wrapper">
+    <div class="conversion-form">
+        <form id="conversion-form">
+
+            <div class="col">
+                <label for="value">Value:</label>
+                <input type="number" id="value" required>
+            </div>
+
+            <div class="col">
+                <label for="fromUnit">From Unit:</label>
+                <select id="fromUnit" required>
+                    <option value="feet">Feet</option>
+                    <option value="miles">Miles</option>
+                    <option value="inches">Inches</option>
+                    <option value="yards">Yards</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="toUnit">To Unit:</label>
+                <select id="toUnit" required>
+                    <option value="feet">Feet</option>
+                    <option value="miles">Miles</option>
+                    <option value="inches">Inches</option>
+                    <option value="yards">Yards</option>
+                </select>
+            </div>
+            <button type="button" class="btn button button--primary button--small" id="convertBtn">Convert</button>
+            <p id="result"></p>
+        </form>
+    </div>
+</div>

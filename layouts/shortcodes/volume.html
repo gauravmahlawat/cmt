@@ -1,0 +1,33 @@
+<div class="messages message" id="message"></div>
+<div class="col--wrapper">
+    <div class="conversion-form">
+        <form id="conversion-form">
+
+            <div class="col">
+                <label for="value">Value:</label>
+                <input type="number" id="value" required>
+            </div>
+
+            <div class="col">
+                <label for="fromUnit">From Unit:</label>
+                <select id="fromUnit" required>
+                    <option value="cubicInches">Cubic Inches</option>
+                    <option value="liters">Liters</option>
+                    <option value="cubicMeters">Cubic Meters</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="toUnit">To Unit:</label>
+                <select id="toUnit" required>
+                    <option value="cubicCentimeters">Cubic Centimeters</option>
+                    <option value="gallons">Gallons</option>
+                    <option value="cubicFeet">Cubic Feet</option>
+                </select>
+            </div>
+
+            <button type="button" id="convertBtn" class="btn button button--primary button--small">Convert</button>
+            <p id="result"></p>
+        </form>
+    </div>
+</div>

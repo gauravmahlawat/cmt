@@ -124,6 +124,26 @@
   <script defer src="{{ "repeat.js" | relURL }}"></script>
 {{ end }}
 
+{{ if eq .Type "facebooktext" }}
+  <script defer src="{{ "facebooktext.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "length" }}
+  <script defer src="{{ "length.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "area" }}
+  <script defer src="{{ "area.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "volume" }}
+  <script defer src="{{ "volume.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "mass" }}
+  <script defer src="{{ "mass.js" | relURL }}"></script>
+{{ end }}
+
 </html>
 
 {{ define "main" }}

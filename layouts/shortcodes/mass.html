@@ -1,0 +1,30 @@
+<div class="col--wrapper">
+    <div class="conversion-form">
+        <form id="conversion-form">
+            <div class="col">
+                <label for="value">Value:</label>
+                <input type="number" id="value" required>
+            </div>
+            
+            <div class="col">
+                <label for="fromUnit">From Unit:</label>
+                <select id="fromUnit" required>
+                    <option value="pounds">Pounds</option>
+                    <option value="ounces">Ounces</option>
+                    <option value="metricTons">Metric Tons</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="toUnit">To Unit:</label>
+                <select id="toUnit" required>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="grams">Grams</option>
+                    <option value="shortTons">Short Tons</option>
+                </select>
+            </div>
+            <button type="button" id="convertBtn">Convert</button>
+            <p id="result"></p>
+        </form>
+    </div>
+</div>

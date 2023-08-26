@@ -5,20 +5,22 @@ function detailChar () {
     const lineCountElement = document.getElementById("line_count");
     
 
-    contentElement.addEventListener("input", updateCounts);
-    
-    function updateCounts() {
-        const content = contentElement.value;
-        const charCount = content.length;
-        const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
-        const lineCount = (content.match(/\n/g) || []).length + 1; // Count newline occurrences
-    
-        charCountElement.textContent = charCount;
-        wordCountElement.textContent = wordCount;
-        lineCountElement.textContent = lineCount;
+    if(charCountElement) {
+        contentElement.addEventListener("input", updateCounts);
+        
+        function updateCounts() {
+            const content = contentElement.value;
+            const charCount = content.length;
+            const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
+            const lineCount = (content.match(/\n/g) || []).length + 1; // Count newline occurrences
+        
+            charCountElement.textContent = charCount;
+            wordCountElement.textContent = wordCount;
+            lineCountElement.textContent = lineCount;
+        }
+
+        updateCounts(); // Initial count update
     }
-    
-    updateCounts(); // Initial count update
 }
 
 detailChar ();
@@ -32,22 +34,24 @@ function readingTime() {
 
     const WORDS_PER_MINUTE = 200; // Average reading speed in words per minute
 
-    contentElement.addEventListener("input", updateCountsAndReadingTime);
+    if(readingTimeElement) {
+        contentElement.addEventListener("input", updateCountsAndReadingTime);
 
-    function updateCountsAndReadingTime() {
-        const content = contentElement.value;
-        const charCount = content.length;
-        const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
-        const lineCount = (content.match(/\n/g) || []).length + 1;
-        const readingTime = Math.ceil(wordCount / WORDS_PER_MINUTE);
+        function updateCountsAndReadingTime() {
+            const content = contentElement.value;
+            const charCount = content.length;
+            const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
+            const lineCount = (content.match(/\n/g) || []).length + 1;
+            const readingTime = Math.ceil(wordCount / WORDS_PER_MINUTE);
 
-        charCountElement.textContent = charCount;
-        wordCountElement.textContent = wordCount;
-        lineCountElement.textContent = lineCount;
-        readingTimeElement.textContent = readingTime;
+            charCountElement.textContent = charCount;
+            wordCountElement.textContent = wordCount;
+            lineCountElement.textContent = lineCount;
+            readingTimeElement.textContent = readingTime;
+        }
+
+        updateCountsAndReadingTime(); // Initial count update
     }
-
-    updateCountsAndReadingTime(); // Initial count update
 }
 
 readingTime();

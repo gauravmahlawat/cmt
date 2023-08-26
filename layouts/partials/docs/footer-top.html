@@ -15,14 +15,22 @@
         <p>This is an example of sentence case.</p>
     </div>
     <div class="about-item">
+        {{ if not .IsHome }}
+        <h3><a href="{{ "" | relURL }}">Lower Case</a></h3>
+        {{ else }}
         <h3>Lower Case</h3>
+        {{ end }}
         <p>If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow
             you to do - it transforms all the letters in your text into lowercase letters. Simply copy the text that you
             need generating into lower case and paste the text into the box above and select the ‘lower case’ tab.</p>
         <p>this is an example of lower case.</p>
     </div>
     <div class="about-item">
+        {{ if not .IsHome }}
+        <h3><a href="{{ "" | relURL }}">Upper Case</a></h3>
+        {{ else }}
         <h3>Upper Case</h3>
+        {{ end }}
         <p>The upper case transformer will take any text that you have and will generate all the letters into upper case
             ones. It will essentially make all lower case letters into CAPITALS (as well as keep upper case letters as
             upper case letters).</p>
@@ -31,7 +39,11 @@
         <p>THIS IS AN EXAMPLE OF UPPER CASE.</p>
     </div>
     <div class="about-item">
+        {{ if not .IsHome }}
+        <h3><a href="{{ "" | relURL }}">Capitalized Case</a></h3>
+        {{ else }}
         <h3>Capitalized Case</h3>
+        {{ end }}
         <p>The capitalized case converter will automatically convert the starting letter of every word into an upper
             case and will leave the remaining letters as lower case ones.</p>
         <p>Simply copy the content that you will like to generate into this format, then paste into the box form above
@@ -39,7 +51,11 @@
         <p>This Is An Example Of Capitalized Case.</p>
     </div>
     <div class="about-item">
+        {{ if not .IsHome }}
+        <h3><a href="{{ "" | relURL }}">Alternating Case</a></h3>
+        {{ else }}
         <h3>Alternating Case</h3>
+        {{ end }}
         <p>The alternating case converter will allow you to transform your text (no matter the current format) into text
             that alternates between lower case and upper case. It will generate a capital letter and then a lower case
             letter within the same word.</p>
@@ -59,6 +75,20 @@
             font.</p>
         <p class="arial">Tʜɪꜱ ɪꜱ ᴀɴ ᴇxᴀᴍᴘʟᴇ ᴏꜰ ᴛɪɴʏ ᴛᴇxᴛ ᴄᴀꜱᴇ ꜱᴍᴀʟʟ ᴄᴀᴘꜱ<br>ᵗʰⁱˢ ⁱˢ ᵃⁿ ᵉˣᵃᵐᵖˡᵉ ᵒᶠ ᵗⁱⁿʸ ᵗᵉˣᵗ ᶜᵃˢᵉ
             ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ</p>
+    </div>
+    <div class="about-item">
+        <h3><a href="{{ "facebook-font-generator/" | relURL }}">Facebook Font Generator</a></h3>
+        <p>The Facebook font generator simply takes regular sized text and converts it into superscript text. Write out your normal text and see it get converted into the superscript text
+            font.</p>
+        <p class="arial">𝔗𝔶𝔭𝔢 𝔬𝔯 𝔭𝔞𝔰𝔱𝔢 𝔶𝔬𝔲𝔯 𝔠𝔬𝔫𝔱𝔢𝔫𝔱 𝔥𝔢𝔯𝔢
+            <br>𝕿𝖞𝖕𝖊 𝖔𝖗 𝖕𝖆𝖘𝖙𝖊 𝖞𝖔𝖚𝖗 𝖈𝖔𝖓𝖙𝖊𝖓𝖙 𝖍𝖊𝖗𝖊</p>
+    </div>
+    <div class="about-item">
+        <h3><a href="{{ "instagram-font-generator/" | relURL }}">Instagram Font Generator</a></h3>
+        <p>The Instagram font generator simply takes regular sized text and converts it into superscript text. Write out your normal text and see it get converted into the superscript text
+            font.</p>
+        <p class="arial">𝔗𝔶𝔭𝔢 𝔬𝔯 𝔭𝔞𝔰𝔱𝔢 𝔶𝔬𝔲𝔯 𝔠𝔬𝔫𝔱𝔢𝔫𝔱 𝔥𝔢𝔯𝔢
+            <br>𝕿𝖞𝖕𝖊 𝖔𝖗 𝖕𝖆𝖘𝖙𝖊 𝖞𝖔𝖚𝖗 𝖈𝖔𝖓𝖙𝖊𝖓𝖙 𝖍𝖊𝖗𝖊</p>
     </div>
     <div class="about-item">
         <h3><a href="{{ "wide-text-generator/" | relURL }}">Wide Text Generator</a></h3>
