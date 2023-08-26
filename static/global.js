@@ -51,3 +51,33 @@ function readingTime() {
 }
 
 readingTime();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const headerMenu = document.querySelector(".mobile-buttons");
+    const headerMenuItem = document.querySelector(".header-menu");
+
+    headerMenu.addEventListener("click", function() {
+        headerMenuItem.classList.toggle("is-active");
+    });
+
+    const mobileNavButton = document.querySelector(".mobile-nav-button");
+
+    mobileNavButton.addEventListener("click", function() {
+        const isExpanded = this.getAttribute("aria-expanded") === "false";
+        this.setAttribute("aria-expanded", isExpanded);
+    });
+
+    const expandMobileNavButtons = document.querySelectorAll(".primary-nav__button-toggle");
+    const mobileShowMenus = document.querySelectorAll(".header-menu--level-1 ul");
+
+    expandMobileNavButtons.forEach((button, index) => {
+        button.addEventListener("click", function() {
+            const isExpanded = this.getAttribute("aria-expanded") === "false";
+            this.setAttribute("aria-expanded", isExpanded);
+            console.log('ss')
+            mobileShowMenus[index].classList.toggle("is-active");
+        });
+    });
+
+});
+

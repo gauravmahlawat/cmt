@@ -18,7 +18,7 @@
   class="homepage" {{ end }} {{ if eq .Type "contact" }} class="contact-page" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
 
   {{ partial "docs/header" . }}
-  <main class="flex mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
+  <main class="flex mobile-padding-0">
 
     <div class="social-bar">
       <div class="rotate">

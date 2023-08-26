@@ -15,8 +15,18 @@
     </div>
   </div>
 
+  <div class="mobile-buttons" data-drupal-selector="mobile-buttons">
+    <button class="mobile-nav-button" data-drupal-selector="mobile-nav-button" aria-label="Main Menu" aria-controls="header-nav" aria-expanded="false">
+      <span class="mobile-nav-button__label">Menu</span>
+      <span class="mobile-nav-button__icon"></span>
+    </button>
+  </div>
   <ul class="js header-menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     <li class="header-menu--level-1"><span>Text Convertor</span>
+      <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button" aria-controls="primary-menu-item-1" aria-expanded="false">
+        <span class="visually-hidden">Home sub-navigation</span>
+        <span class="icon--menu-toggle"></span>
+      </button>
       <span data-drupal-selector="primary-nav-menu-🥕" class="primary-nav__menu-🥕 is-active-menu-parent"></span>
       <ul>
         <li itemprop="name"><a itemprop="url" href="{{ "" | relURL }}">Convert My text</a></li>
@@ -54,6 +64,10 @@
     </li>
     <li class="header-menu--level-1">
       <span>Code Convertor</span>
+      <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button" aria-controls="primary-menu-item-1" aria-expanded="false">
+        <span class="visually-hidden">Home sub-navigation</span>
+        <span class="icon--menu-toggle"></span>
+      </button>
       <span data-drupal-selector="primary-nav-menu-🥕" class="primary-nav__menu-🥕 is-active-menu-parent"></span>
       <ul>
         <li itemprop="name"><a itemprop="url" href="{{ "morse-code-translator" | relURL }}">Morse Code
