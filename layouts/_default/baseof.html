@@ -46,82 +46,82 @@
 
 </body>
 
-<script src="{{ "global.js" | relURL }}"></script>
+<script defer src="{{ "global.js" | relURL }}"></script>
 {{ if .IsHome }}
-  <script src="{{ "homepage.js" | relURL }}"></script>
+  <script defer src="{{ "homepage.js" | relURL }}"></script>
 {{ end }}
 
 
 {{ if eq .Type "smallcaseconvertor" }}
-  <script src="{{ "small-case-converter.js" | relURL }}"></script>
+  <script defer src="{{ "small-case-converter.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "widecaseconvertor" }}
-  <script src="{{ "wide-text.js" | relURL }}"></script>
+  <script defer src="{{ "wide-text.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "strikethroughcaseconvertor" }}
-  <script src="{{ "strikethrough-text.js" | relURL }}"></script>
+  <script defer src="{{ "strikethrough-text.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "reversecaseconvertor" }}
-  <script src="{{ "reverse-case.js" | relURL }}"></script>
+  <script defer src="{{ "reverse-case.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "upsidedown" }}
-  <script src="{{ "upside-down.js" | relURL }}"></script>
+  <script defer src="{{ "upside-down.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "morsecode" }}
-  <script src="{{ "morse-code.js" | relURL }}"></script>
+  <script defer src="{{ "morse-code.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "binary" }}
-  <script src="{{ "binary.js" | relURL }}"></script>
+  <script defer src="{{ "binary.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "titlecase" }}
-  <script src="{{ "title-case.js" | relURL }}"></script>
+  <script defer src="{{ "title-case.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "bold" }}
-  <script src="{{ "bold.js" | relURL }}"></script>
+  <script defer src="{{ "bold.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "italic" }}
-  <script src="{{ "italic.js" | relURL }}"></script>
+  <script defer src="{{ "italic.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "underline" }}
-  <script src="{{ "underline.js" | relURL }}"></script>
+  <script defer src="{{ "underline.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "mirror" }}
-  <script src="{{ "mirror.js" | relURL }}"></script>
+  <script defer src="{{ "mirror.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "unicode" }}
-  <script src="{{ "unicode.js" | relURL }}"></script>
+  <script defer src="{{ "unicode.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "bubble" }}
-  <script src="{{ "bubble.js" | relURL }}"></script>
+  <script defer src="{{ "bubble.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "sentence" }}
-  <script src="{{ "sentence.js" | relURL }}"></script>
+  <script defer src="{{ "sentence.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "glitch" }}
-  <script src="{{ "glitch.js" | relURL }}"></script>
+  <script defer src="{{ "glitch.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "invisible" }}
-  <script src="{{ "invisible.js" | relURL }}"></script>
+  <script defer src="{{ "invisible.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "repeat" }}
-  <script src="{{ "repeat.js" | relURL }}"></script>
+  <script defer src="{{ "repeat.js" | relURL }}"></script>
 {{ end }}
 
 </html>
