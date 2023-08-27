@@ -555,6 +555,8 @@ textarea {
 
     &.welcome {
       border-top: 4px solid #2494db;
+      width: 100%;
+      flex: 0 100%;
     }
 
     @media screen and (max-width: $tablet-breakpoint){

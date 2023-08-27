@@ -6,6 +6,6 @@ keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, S
 draft: false
 ---
 
-# Title Case Convertor Online
+# Title Case converter Online
 
 {{< title-case >}}

@@ -6,6 +6,6 @@ keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, S
 draft: false
 ---
 
-# Glitch Case Convertor Online
+# Glitch Case converter Online
 
 {{< glitch >}}

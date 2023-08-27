@@ -1,5 +1,5 @@
 document.getElementById("copy").addEventListener("click", function() {
-    var contentElement = document.getElementById("content");
+    var contentElement = document.getElementById("output");
     var content = contentElement.value.trim();  // Trim whitespace
 
     if (content === "") {

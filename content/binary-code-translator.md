@@ -6,6 +6,6 @@ keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, S
 draft: false
 ---
 
-# Binary code Convertor Online
+# Binary code converter Online
 
 {{< binary-code >}}
