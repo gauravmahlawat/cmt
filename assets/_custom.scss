@@ -733,7 +733,7 @@ textarea {
 
 .footer-menu--level-1:not(:nth-child(1)) {
   margin-bottom: 15px;
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 767.9px) {
     margin-top: 28px;
   }
 }
@@ -929,6 +929,10 @@ textarea {
     visibility: visible;
     transform: translateX(calc(-100% - var(--drupal-displace-offset-right, 0px)));
     padding-block: 20px 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 900px){
+      padding-block: 60px 40px;
+    }
   }
 }
 
