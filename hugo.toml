@@ -1,5 +1,5 @@
 languageCode = 'en-us'
-title = 'cmt'
+title = 'Convert My Text'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
 enableRobotsTXT = true
