@@ -1,6 +1,6 @@
 ---
-title: 'Online Case Converter: A Text Converter to Convert Case Easily'
-description: "This online case converter allows you to convert case of your text within seconds. Use the text converter to convert to uppercase, lower case, sentence case, Capitalized Case, aLtErNaTiNg cAsE, title case and more"
+title: 'Convert upper case to lower case to upper case online free'
+description: "Online convert text case free between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more"
 type: page
 draft: false
 ---

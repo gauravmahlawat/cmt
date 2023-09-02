@@ -72,16 +72,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const expandMobileNavButtons = document.querySelectorAll(".primary-nav__button-toggle");
+    const mobileShowMenusl1 = document.querySelectorAll(".header-menu--level-1");
     const mobileShowMenus = document.querySelectorAll(".header-menu--level-1 ul");
 
-    expandMobileNavButtons.forEach((button, index) => {
+    mobileShowMenusl1.forEach((button, index) => {
         button.addEventListener("click", function() {
-            const isExpanded = this.getAttribute("aria-expanded") === "false";
-            this.setAttribute("aria-expanded", isExpanded);
-            console.log('ss')
-            mobileShowMenus[index].classList.toggle("is-active");
+            // Find the corresponding expand button within the clicked menu
+            const expandButton = this.querySelector(".primary-nav__button-toggle");
+            
+            if (expandButton) {
+                const isExpanded = expandButton.getAttribute("aria-expanded") === "false";
+                expandButton.setAttribute("aria-expanded", isExpanded);
+                mobileShowMenus[index].classList.toggle("is-active");
+            }
         });
     });
+
 
 });
 

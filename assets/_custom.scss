@@ -151,6 +151,7 @@ textarea {
   resize: vertical;
   background-color: transparent;
   color: #000;
+  border-radius: 0;
 
   &:focus {
     border-width: 2px;
@@ -1031,6 +1032,8 @@ textarea {
       border-top: 3px solid #2494db;
       padding: 11.5px;
       width: 100%;
+      background-color: transparent;
+      border-radius: 0;
 
       &:focus {
         border-width: 2px;
