@@ -145,6 +145,12 @@
   <script defer src="{{ "mass.js" | relURL }}"></script>
 {{ end }}
 
+{{ if eq .Type "ckeditor" }}
+  <script defer src="https://cdn.ckeditor.com/ckeditor5/39.0.1/super-build/ckeditor.js">
+  </script>
+  <script defer src="{{ "ckeditor.js" | relURL }}"></script>
+{{ end }}
+
 <!-- Google tag (gtag.js) -->
 <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Q4L7DEPJNP"></script>
 <script async defer>

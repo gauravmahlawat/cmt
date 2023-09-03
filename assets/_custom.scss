@@ -1034,6 +1034,7 @@ textarea {
       width: 100%;
       background-color: transparent;
       border-radius: 0;
+      color: #000;
 
       &:focus {
         border-width: 2px;
@@ -1058,4 +1059,9 @@ textarea {
   display: block;
   background: #f1f1f17a;
   border-radius: 8px;
+}
+
+.ck-placeholder, .ck-editor__editable {
+  min-height: 400px;
+  height: auto;
 }
