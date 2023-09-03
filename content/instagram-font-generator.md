@@ -8,9 +8,9 @@ draft: false
 
 # Instagram Font Generator/Convertor online free
 
-{{< facebooktext >}}
-
 The Instagram text generator is a special text converter that changes ordinary text into a fashionable and alluring font. Use this cool text generator to add your own personal touch to the text in your posts to increase engagement. Select a font from the many options, and watch as plain text is replaced with interesting ones. The best part is that all you have to do to convert text is copy it into a new window and press Enter. Our Instagram text generator will handle the rest.
+
+{{< facebooktext >}}
 
 This convenient yet elegant text generator will choose the ideal font for you, so you no longer need to spend time considering your options. Your regular text will be converted into a variety of text styles all at once, allowing you to compare them and decide which is the best-fit and audacious. 
 
