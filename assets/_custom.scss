@@ -1061,7 +1061,35 @@ textarea {
   border-radius: 8px;
 }
 
-.ck-placeholder, .ck-editor__editable {
+.cmt-placeholder, .cmt-editor__editable {
   min-height: 400px;
   height: auto;
+}
+
+.cmt-powered-by {
+  display: none;
+}
+
+.cmt-editor {
+  border: 1px solid #c2c2c2 !important;
+  border-top: 4px solid #2494db !important;
+}
+
+.cmt-blurred {
+  border-top: 2px solid #c2c2c2 !important;
+}
+
+.cmt-focused {
+  /* border: 2px solid #2494db !important; */
+  border-radius: 0 !important;
+  outline: 2px solid #2494db !important;
+  outline-offset: -5px !important;
+
+  + .cmt-source-editing-area {
+    min-height: 400px;
+    textarea {
+      outline: 2px solid #2494db !important;
+      outline-offset: -5px !important;
+    }
+  }
 }

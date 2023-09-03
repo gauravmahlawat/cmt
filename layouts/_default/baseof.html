@@ -145,10 +145,10 @@
   <script defer src="{{ "mass.js" | relURL }}"></script>
 {{ end }}
 
-{{ if eq .Type "ckeditor" }}
-  <script defer src="https://cdn.ckeditor.com/ckeditor5/39.0.1/super-build/ckeditor.js">
+{{ if eq .Type "cmteditor" }}
+  <script defer src="{{ "cmt.js" | relURL }}">
   </script>
-  <script defer src="{{ "ckeditor.js" | relURL }}"></script>
+  <script defer src="{{ "ceditor.js" | relURL }}"></script>
 {{ end }}
 
 <!-- Google tag (gtag.js) -->
