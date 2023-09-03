@@ -36,7 +36,7 @@ CMTEDITOR.ClassicEditor.create(document.getElementById("cmteditor"), {
             { model: 'heading6', view: 'h6', title: 'Heading 6', class: 'cmt-heading_heading6' }
         ]
     },
-    placeholder: 'Welcome to CMTEDITOR!',
+    placeholder: 'Welcome to CMT EDITOR!',
     fontFamily: {
         options: [
             'default',

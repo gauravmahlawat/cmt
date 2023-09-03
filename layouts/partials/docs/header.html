@@ -23,7 +23,7 @@
     </button>
   </div>
   <ul class="js header-menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-    <li class="header-menu--level-1"><span>Text converter</span>
+    <li class="header-menu--level-1 has-children"><span>Text converter</span>
       <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button"
         aria-controls="primary-menu-item-1" aria-expanded="false">
         <span class="visually-hidden">Home sub-navigation</span>
@@ -70,7 +70,7 @@
             Generator</a></li>
       </ul>
     </li>
-    <li class="header-menu--level-1">
+    <li class="header-menu--level-1 has-children">
       <span>Code converter</span>
       <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button"
         aria-controls="primary-menu-item-1" aria-expanded="false">
@@ -88,7 +88,7 @@
       </ul>
     </li>
 
-    <li class="header-menu--level-1">
+    <li class="header-menu--level-1 has-children">
       <span>Unit converter</span>
       <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button"
         aria-controls="primary-menu-item-1" aria-expanded="false">
@@ -110,9 +110,13 @@
     </li>
 
     <li class="header-menu--level-1 about-us">
+      <a class="button button--primary button--small" href=" {{ "cmteditor" | relURL }}">CMT Editor</a>
+    </li>
+
+    <!-- <li class="header-menu--level-1 about-us">
       <a href=" {{ "about-us" | relURL }}">
       About Us
       </a>
-    </li>
+    </li> -->
   </ul>
 </header>
