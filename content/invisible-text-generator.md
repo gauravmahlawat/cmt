@@ -1,7 +1,7 @@
 ---
 title: 'Invisible Text Generator tool | Generate Invisible Characters online'
 description: "Generate invisible text online and empty characters here. Generate invisible text with convert my text tool online. Want to send invisble message. use invisible text generator tool."
-type: glitch
+type: invisible
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
 ---

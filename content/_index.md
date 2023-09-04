@@ -1,5 +1,5 @@
 ---
-title: 'Convert upper case to lower case to upper case Online tool'
+title: 'Convert upper case to lower case Online tool'
 description: "Online convert text case free between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more"
 type: page
 draft: false
