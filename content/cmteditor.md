@@ -9,5 +9,7 @@ draft: false
 # CMT Editor ! Text editor for everyone.
 
 {{< rawhtml >}}
-   <div id="cmteditor"></div>
+   <div id="cmteditor">
+   Loading...
+   </div>
 {{< /rawhtml >}}

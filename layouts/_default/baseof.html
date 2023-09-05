@@ -146,20 +146,67 @@
 {{ end }}
 
 {{ if eq .Type "cmteditor" }}
-  <script defer src="{{ "cmt.js" | relURL }}">
+  <script>
+    setTimeout(function() {
+      var cmteditormsg = document.getElementById("cmteditor");
+      cmteditormsg.innerHTML = "";
+    }, 3000);
+
+    setTimeout(load_cmtjs, 3000);
+    setTimeout(load_cejs, 3200);
+    function load_cmtjs() {
+      var head_ID = document.getElementsByTagName("head")[0]; 
+      // Create script element       
+      var script_element = document.createElement('script');
+      // Set the script type to JavaScript
+      script_element.type = 'text/javascript';
+      // External JS file
+      script_element.src = "/cmt.js";
+      head_ID.appendChild(script_element);
+    }
+    function load_cejs() {
+      var head_ID = document.getElementsByTagName("head")[0]; 
+      // Create script element       
+      var script_element = document.createElement('script');
+      // Set the script type to JavaScript
+      script_element.type = 'text/javascript';
+      // External JS file
+      script_element.src = "/ceditor.js";
+      head_ID.appendChild(script_element);
+    }
   </script>
-  <script defer src="{{ "ceditor.js" | relURL }}"></script>
 {{ end }}
 
+<script>
+  setTimeout(load_js, 4000); // Delay 4 seconds in loading function
+
+  function load_js() {
+      // Get the head tag
+      var head_ID = document.getElementsByTagName("head")[0]; 
+      // Create script element       
+      var script_element = document.createElement('script');
+      // Set the script type to JavaScript
+      script_element.type = 'text/javascript';
+      // External JS file
+      script_element.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q4L7DEPJNP';
+      head_ID.appendChild(script_element);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q4L7DEPJNP');
+  }
+</script>
 <!-- Google tag (gtag.js) -->
-<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Q4L7DEPJNP"></script>
+<!-- <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Q4L7DEPJNP"></script>
 <script async defer>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-Q4L7DEPJNP');
-</script>
+</script> -->
 
 </html>
 
