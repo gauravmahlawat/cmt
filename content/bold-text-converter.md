@@ -5,7 +5,7 @@ type: bold
 draft: false
 ---
 
-# Bold Text Generator/Convertor Online
+# Bold Text Convertor/Generator Online
 
 Count on our online bold text generator to convert text in bold text. Simply copy and paste the text you want to make bold into the area on the left, and as you type, you'll see it change to bold in the field on the right. Once it has been converted to bold text, just copy it and paste it where you want it.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Title Case Converter Tool online | Capitalize My Title'
-description: "convert to Capitalize Title? Then Use This Quick, Free Online Handy Title Case Converter Tool online. Simple Copy and Paste. Find Out More Here."
+description: "convert to Capitalize Title? Then Use This Quick, Free Online Handy Title Case Converter Tool online. Simple Copy and Paste. title case vs sentence case, ap title case, google scholar"
 type: titlecase
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

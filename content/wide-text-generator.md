@@ -1,6 +1,6 @@
 ---
 title: 'Vaporwave Text Generator | Wide Text Generator online'
-description: "Want to Widen Your Text? Use Our Free Fast Online Vaporwave Text Generator to Convert Your Standard Text Into an Aesthetic Font convert my text online tool"
+description: "Want to Widen Your Text? Use Our Free Fast Online Vaporwave Text Generator to Convert Your Standard Text Into an Aesthetic Font convert my text online tool. wide text generator"
 type: widecaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

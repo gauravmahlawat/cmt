@@ -1,12 +1,12 @@
 ---
 title: 'Strikethrough Text Generator online | Cross Out Text Generator'
-description: "Need a Strike Through Text Generator for instagram? Then Put a Line Through Your Text Here - Copy and Paste It Where You’d Like. strike text for instagram and facebook online"
+description: "how to do a strikethrough in excel, unicode strikethrough, how to add strikethrough in google doc, how to do strikethrough on whatsapp, hotkey for strikethrough, strikethrough in outlook"
 type: strikethroughcaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
 ---
 
-# Strikethrough Text Generator Online
+# How to do a Strikethrough Text in excel, outlook or google doc?
 
 Simple and easy to use strikethrough text generator. Convert standard text into crossed out text with this online strike text generator with Convert my text. Type normal text on the left and have the content come out with crossed out font through the strikeout generator.
 

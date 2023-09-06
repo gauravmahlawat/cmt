@@ -1,6 +1,6 @@
 ---
 title: 'Sentence Case Converter online | Sentence Case Generator '
-description: "Looking for a Quick and Easy Sentence Case Converter Online? Use This Online Sentence Case Converter to Get Sentence Casing. Convert to sentence case"
+description: "Looking for a Quick and Easy Sentence Case Converter Online? Use This Online Sentence Case Converter to Get Sentence Casing. Convert to sentence case, sentence case vs title case, grammarly"
 type: sentence
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

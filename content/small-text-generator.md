@@ -1,6 +1,6 @@
 ---
 title: 'Small Text Generator - Superscript Generator | Tiny Text Generator'
-description: "Want to Write in Small Text? Use This Online  Small Text Generator to Create Small Text From Regular Sized Text. convert to small text online free"
+description: "small text gen, outlook text too small, outlook email font too small, small caps text generator, small caps font, quizlet, convert to small text online free"
 type: smallcaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

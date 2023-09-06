@@ -1,6 +1,6 @@
 ---
-title: 'Morse Code Translator - Morse Code Converter online'
-description: "Are you looking for a simple text to morse code converter online? If so, check out the handy simple and easy to use free morse code translator here."
+title: 'Morse Code Translator ._. Morse Code Converter online'
+description: "dahs counterpart in morse code, ._. morse code, morse code mnemonics, morse code machine name, mi morse code, d in morse code, how to say hi in morse code, why was morse code invented"
 type: morsecode
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

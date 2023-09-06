@@ -1,6 +1,6 @@
 ---
 title: 'Underline Text Generator | Underline Your Text online'
-description: "Looking to Get Your Text Underlined? Use This Online Fast and Free Underline Text Converter Now. Find Out More Here. Underline text generator tool online"
+description: "Looking to Get Your Text Underlined? Use This Online Fast and Free Underline Text Converter Now. how to underline text on phone? shortcut to underline text, markdown underline"
 type: underline
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

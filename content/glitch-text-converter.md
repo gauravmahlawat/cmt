@@ -1,6 +1,6 @@
 ---
-title: 'Glitch Zalgo Text Generator online | Glitch Text Generator free'
-description: "Looking for a Quick Online Glitch Text Generator tool? Convert Your Text to Zalgo Text Here With Our Zalgo Glitch Converter online free. Find Out More Here."
+title: 'Glitch Text Generator online | blooket Glitch font converter'
+description: "Looking for a Quick Online Glitch Text Generator tool? Convert Your Text to Zalgo Text Here With Our Zalgo Glitch Converter online free. Find Out More Here. Boolket"
 type: glitch
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

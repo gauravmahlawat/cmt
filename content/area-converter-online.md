@@ -1,6 +1,6 @@
 ---
-title: 'Area Converter: Square Feet to Square Meters, Square Kilometers to Square Miles, Acres to Hectares'
-description: "Easily convert areas with our versatile online area converter tool. Instantly switch between square feet to square meters, square kilometers to square miles, and acres to hectares. Accurate and user-friendly, simplify your area calculations today."
+title: 'Area Converter Square Feet to Square Meters'
+description: "square meter to square feet converter app, how many square feet in an acre, 8000 hectares to acres, acres to square feet"
 type: length
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
