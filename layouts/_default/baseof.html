@@ -44,6 +44,7 @@
   </main>
   {{ partial "docs/footer" . }}
 
+  <div class="gtranslate_wrapper"></div>
 
 </body>
 
@@ -197,6 +198,21 @@
 
       gtag('config', 'G-Q4L7DEPJNP');
   }
+</script>
+
+<script>
+  setTimeout(load_gjs, 2800); // Delay 4 seconds in loading function
+    function load_gjs() {
+      window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","zh-TW","zh-CN","fr","de","it","ja","ko","pt","es"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","alt_flags":{"en":"usa","es":"mexico"}}
+      var head_ID = document.getElementsByTagName("head")[0]; 
+      // Create script element       
+      var script_element = document.createElement('script');
+      // Set the script type to JavaScript
+      script_element.type = 'text/javascript';
+      // External JS file
+      script_element.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
+      head_ID.appendChild(script_element);
+    }
 </script>
 <!-- Google tag (gtag.js) -->
 <!-- <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Q4L7DEPJNP"></script>
