@@ -137,6 +137,7 @@ a {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 0 0.1875rem;
+  font-weight: 400;
   &:hover {
     color: #0d77b5;
   }
@@ -582,6 +583,7 @@ textarea {
     padding: 10px;
     border: 1px solid #c2c2c2;
     border-top: 2px solid #2494db;
+    font-weight: 400;
 
     &.welcome {
       border-top: 4px solid #2494db;
@@ -1154,4 +1156,29 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.markdown {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.about h2.mt-2 {
+  margin-top: 22px;
+}
+
+.devtool {
+  textarea {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    background: white;
+    color: black;
+    height: 44px;
+    border: 2px solid black;
+    border-color: var(--color--primary-40);
+    padding: 0 16px;
+  }
 }

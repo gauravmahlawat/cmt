@@ -38,7 +38,13 @@
         {{ partial "docs/convert-text" . }}
       {{ end }}
 
+      {{ if eq .Type "devtool" }}
+        {{ partial "docs/devtools" . }}
+      {{ end }}
+
+      {{ if ne .Type "devtool" }}
       {{ partial "docs/footer-top" . }}
+      {{ end }}
 
     </div>
   </main>
@@ -144,6 +150,21 @@
 
 {{ if eq .Type "mass" }}
   <script defer src="{{ "mass.js" | relURL }}"></script>
+{{ end }}
+
+{{ if eq .Type "devtool" }}
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script defer type="text/javascript" src="{{ "js/jquery-1.10.2.min.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/jquery.zclip.min.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/all.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/clipboard.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/jquery.base64.min.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/vkbeautify.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/ace.js" | relURL }}"></script>
+  <script defer type="text/javascript" src="{{ "js/less-1.4.1.min.js" | relURL }}"></script>
+  <!-- <script type="text/javascript" src="{{ "js/jquery.qrcode-0.6.0.min.js" | relURL }}"></script> -->
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script defer type="text/javascript" src="{{ "devtool.js" | relURL }}"></script>
 {{ end }}
 
 {{ if eq .Type "cmteditor" }}
