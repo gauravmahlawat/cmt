@@ -260,8 +260,14 @@ textarea {
       align-items: flex-end;
       padding: 2.5rem;
 
+      img {
+        @media screen and (max-width: 767px) {
+          width: 220px;
+        }
+      }
+
       @media screen and (max-width: 767px) {
-        padding-block: 0 var(--sp0-5);
+        padding-block: var(--sp0-5);
         padding-inline-start: var(--container-padding);
         padding-inline-end: var(--container-padding);
         min-height: 4rem; 

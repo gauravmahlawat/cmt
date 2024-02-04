@@ -4,6 +4,7 @@ description: "Want to Flip Your Text Backwards online? Then Use Our Simple to Us
 type: reversecaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Reverse/Backwards Text Generator Online

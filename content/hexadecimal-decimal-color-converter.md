@@ -4,6 +4,7 @@ description: "Effortlessly convert hexadecimal color codes to decimal values wit
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Hexadecimal to Decimal Color Converter

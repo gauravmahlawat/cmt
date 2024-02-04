@@ -3,6 +3,7 @@ title: 'Bold Text Generator online | Bold Generator text | Bold Font'
 description: "Make Your Text Bold? Convert Your Text Into Bold With the Handy Online Free and Quick to Use Bold Text Generator. convert text to bold online"
 type: bold
 draft: false
+sitemap: true
 ---
 
 # Bold Text Convertor/Generator Online

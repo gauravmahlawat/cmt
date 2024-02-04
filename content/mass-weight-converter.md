@@ -4,6 +4,7 @@ description: "convert pounds to kilogram, convert ounces to gram online, convert
 type: mass
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Mass and weight converter

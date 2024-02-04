@@ -4,6 +4,7 @@ description: "Looking for a Quick and Easy Sentence Case Converter Online? Use T
 type: sentence
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Sentence Case Converter Online

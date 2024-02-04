@@ -4,6 +4,7 @@ description: "Reduce the size of your JSON data for efficient data transfer with
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # JSON Minifier Online

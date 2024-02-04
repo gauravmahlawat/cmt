@@ -4,6 +4,7 @@ description: "convert to Capitalize Title? Then Use This Quick, Free Online Hand
 type: titlecase
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Title Case Converter Tool Online

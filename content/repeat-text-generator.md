@@ -4,6 +4,7 @@ description: "Want to repeat your text over and over? Use this free simple onlin
 type: repeat
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Repeat Case Generator Online

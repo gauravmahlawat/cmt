@@ -4,6 +4,7 @@ description: "Want to Convert Text to Binary? Go Head and Use Our Free, Fast Onl
 type: binary
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Binary Code Translator Online Free

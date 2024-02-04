@@ -4,6 +4,7 @@ description: "Generate QR codes for websites, business cards, and more with our 
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # QR Code Generator Online | Create QR Codes Easily

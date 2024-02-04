@@ -4,6 +4,7 @@ description: "Clean up and organize your HTML code with our Online HTML Formatte
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # HTML Formatter Online

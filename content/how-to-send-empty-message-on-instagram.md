@@ -4,6 +4,7 @@ description: "send empty message on what'sapp. empty message copy. How to send e
 type: invisible
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Send empty message on Instagram/WhatsApp

@@ -4,6 +4,7 @@ description: "Easily encode and decode your text or code with our free online Ba
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Base64 Converter! Encode & Decode your code with Base64 convertor for free.

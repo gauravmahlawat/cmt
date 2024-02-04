@@ -10,6 +10,47 @@
   {{ if .Params.keywords }}
   <meta name="keywords" content="{{ .Params.keywords }}">
   {{ end }}
+  {{ if not .IsHome }} 
+  <script>
+    // Get the current title of the page
+    let pageTitle = document.title;
+
+    // Function to trim title to 50 characters
+    function trimTitle(title) {
+      if (title.length > 50) {
+        // Trim the title and add an ellipsis
+        return title.substring(0, 47) + '...';
+      } else {
+        console.log('def')
+        return title;
+      }
+    }
+
+    // Trim the title
+    let trimmedTitle = trimTitle(pageTitle);
+    document.title = trimmedTitle;
+
+    function trimText(text, maxLength) {
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength - 3) + '...';
+  } else {
+    return text;
+  }
+}
+
+// Get the current page description
+let metaDescription = document.querySelector('meta[name="description"]');
+let pageDescription = metaDescription ? metaDescription.getAttribute('content') : '';
+
+// Trim the page description to 150 characters
+let trimmedDescription = trimText(pageDescription, 150);
+
+// Update the meta description with the trimmed version
+if (metaDescription) {
+  metaDescription.setAttribute('content', trimmedDescription);
+}
+  </script>
+  {{ end }}
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="Yhw2-p4-PevToU2ABB4dxkZa-sDC1WZlfaCg1D3l7BQ" />
 
@@ -169,8 +210,8 @@
 
 {{ if eq .Type "cmteditor" }}
   <script>
+    var cmteditormsg = document.getElementById("cmteditor");
     setTimeout(function() {
-      var cmteditormsg = document.getElementById("cmteditor");
       cmteditormsg.innerHTML = "";
     }, 3000);
 

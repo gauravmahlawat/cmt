@@ -4,6 +4,7 @@ description: "Tidy up your CSS code effortlessly with our Online CSS Formatter. 
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # CSS Formatter

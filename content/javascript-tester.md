@@ -4,6 +4,7 @@ description: "Test and debug your JavaScript code effortlessly with our Online J
 type: devtool
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # JavaScript Tester Online

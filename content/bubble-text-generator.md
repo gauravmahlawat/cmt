@@ -4,6 +4,7 @@ description: "Quickly looking to develop your normal text into bubble text onlin
 type: bubble
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Bubble Text Generator/Converter Online

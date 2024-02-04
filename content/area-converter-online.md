@@ -4,6 +4,7 @@ description: "square meter to square feet converter app, how many square feet in
 type: length
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Online Area Converter: Square Feet to Square Meters, Square Kilometers to Square Miles, Acres to Hectares

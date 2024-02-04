@@ -4,6 +4,7 @@ description: "small text gen, outlook text too small, outlook email font too sma
 type: smallcaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Small Text Generator Online

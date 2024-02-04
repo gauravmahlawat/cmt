@@ -4,6 +4,7 @@ description: "how to do a strikethrough in excel, unicode strikethrough, how to 
 type: strikethroughcaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # How to do a Strikethrough Text in excel, outlook or google doc?

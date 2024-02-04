@@ -4,6 +4,7 @@ description: "dahs counterpart in morse code, ._. morse code, morse code mnemoni
 type: morsecode
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Morse Code Translator Online free

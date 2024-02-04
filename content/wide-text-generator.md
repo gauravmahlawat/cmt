@@ -4,6 +4,7 @@ description: "Want to Widen Your Text? Use Our Free Fast Online Vaporwave Text G
 type: widecaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # Wide Text Generator Online

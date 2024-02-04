@@ -3,6 +3,7 @@ title: Convert upper case to lower case Online tool
 description: "how to convert lowercase to uppercase, camel case, convert to small case, how to convert lower case to upper case in excel, sentence case, convert camel case to snake case. converter case"
 type: page
 draft: false
+sitemap: true
 ---
 
 # User-Friendly Case Converter to Fix All Text Case Mistakes with Utmost Ease

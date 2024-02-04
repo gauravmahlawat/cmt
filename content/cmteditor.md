@@ -4,6 +4,7 @@ description: "online text editor for converting text to html, text to pdf and wo
 type: cmteditor
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
+sitemap: true
 ---
 
 # CMT Editor ! Text editor for everyone.
