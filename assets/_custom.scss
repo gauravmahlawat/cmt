@@ -258,7 +258,7 @@ textarea {
       min-height: 10rem;
       display: flex;
       align-items: flex-end;
-      padding: 2.5rem;
+      padding: 0 !important;
 
       img {
         @media screen and (max-width: 767px) {
