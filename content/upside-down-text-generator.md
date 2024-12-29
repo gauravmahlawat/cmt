@@ -9,7 +9,7 @@ sitemap: true
 
 # Upside Down Text Generator Online
 
-This upside down text generator is an easy to use online tool that allows you to completely flip your text with convert my text tool. Simply paste or write the text in the left column and see it automatically get flipped in the right.
+This upside down text generator is an easy to use online tool that allows you to completely flip your text with Case Convertors tool. Simply paste or write the text in the left column and see it automatically get flipped in the right.
 
 
 

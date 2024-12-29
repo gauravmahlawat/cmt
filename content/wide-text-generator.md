@@ -1,6 +1,6 @@
 ---
 title: 'Vaporwave Text Generator | Wide Text Generator online'
-description: "Want to Widen Your Text? Use Our Free Fast Online Vaporwave Text Generator to Convert Your Standard Text Into an Aesthetic Font convert my text online tool. wide text generator"
+description: "Want to Widen Your Text? Use Our Free Fast Online Vaporwave Text Generator to Convert Your Standard Text Into an Aesthetic Font Case Convertors online tool. wide text generator"
 type: widecaseconverter
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
@@ -9,7 +9,7 @@ sitemap: true
 
 # Wide Text Generator Online
 
-A simple to use online vaporwave text generator tool that widens and spaces out your text with convert my text tool. It basically converts your normal text into a vaporwave font, you will see that it is also referred to as an aesthetic font. Essentially you will have your standard font widened via this wide text generator.
+A simple to use online vaporwave text generator tool that widens and spaces out your text with Case Convertors tool. It basically converts your normal text into a vaporwave font, you will see that it is also referred to as an aesthetic font. Essentially you will have your standard font widened via this wide text generator.
 
 
 

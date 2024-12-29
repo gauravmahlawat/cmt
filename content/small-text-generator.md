@@ -9,7 +9,7 @@ sitemap: true
 
 # Small Text Generator Online
 
-This small text generator is a handy online tool, where you can convert standard text (whether that’s capitals, small letters and more) into tiny text online with Convert my text. The tiny text options are ‘small caps’ and ‘superscript’. Find out how to use the tiny text generator below.
+This small text generator is a handy online tool, where you can convert standard text (whether that’s capitals, small letters and more) into tiny text online with Case Convertors. The tiny text options are ‘small caps’ and ‘superscript’. Find out how to use the tiny text generator below.
 
 {{< small-case >}}
 

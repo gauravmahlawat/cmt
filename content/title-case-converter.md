@@ -9,7 +9,7 @@ sitemap: true
 
 # Title Case Converter Tool Online
 
-An easy to use title capitalization tool. Convert your standard text into title text with this online title capitalizer with convert my text. Simply enter your standard text into the title case converter on the left and see it automatically get generated on the right.
+An easy to use title capitalization tool. Convert your standard text into title text with this online title capitalizer with Case Convertors. Simply enter your standard text into the title case converter on the left and see it automatically get generated on the right.
 
 
 

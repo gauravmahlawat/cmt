@@ -9,7 +9,7 @@ sitemap: true
 
 # Reverse/Backwards Text Generator Online
 
-Normal front facing text to backwards text. A simple online backward text generator tool that allows you to switch the way your text is facing. Simply write or paste the text in the left column and see it get converted in the right. Generate Reverse text by Convert my text tool.
+Normal front facing text to backwards text. A simple online backward text generator tool that allows you to switch the way your text is facing. Simply write or paste the text in the left column and see it get converted in the right. Generate Reverse text by Case Convertors tool.
 
 
 {{< reverse-case >}}

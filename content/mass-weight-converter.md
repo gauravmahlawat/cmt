@@ -1,6 +1,6 @@
 ---
 title: 'Mass and weight converter online'
-description: "convert pounds to kilogram, convert ounces to gram online, convert metric tons to short tons online with convert my text"
+description: "convert pounds to kilogram, convert ounces to gram online, convert metric tons to short tons online with Case Convertors"
 type: mass
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false

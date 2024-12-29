@@ -9,7 +9,7 @@ sitemap: true
 
 # How to do a Strikethrough Text in excel, outlook or google doc?
 
-Simple and easy to use strikethrough text generator. Convert standard text into crossed out text with this online strike text generator with Convert my text. Type normal text on the left and have the content come out with crossed out font through the strikeout generator.
+Simple and easy to use strikethrough text generator. Convert standard text into crossed out text with this online strike text generator with Case Convertors. Type normal text on the left and have the content come out with crossed out font through the strikeout generator.
 
 {{< strikethrough-text >}}
 

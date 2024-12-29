@@ -1,5 +1,5 @@
 languageCode = 'en-us'
-title = 'Convert My Text'
+title = 'Case Convertors'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
 enableRobotsTXT = true
