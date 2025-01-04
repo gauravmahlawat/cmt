@@ -1,5 +1,5 @@
 ---
-title: 'Bubble text generator | Bubble font convertor online free'
+title: 'Bubble text generator | Bubble font converter online free'
 description: "Quickly looking to develop your normal text into bubble text online. how to change text bubble color on android. Bubble text for instagram"
 type: bubble
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'

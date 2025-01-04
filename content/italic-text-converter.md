@@ -1,5 +1,5 @@
 ---
-title: 'Italic Text Generator | Italics font convertor'
+title: 'Italic Text Generator | Italics font converter'
 description: "how to make text italic in whatsapp? Convert Text Into Italics in seconds? Convert Your Text Into an Italic Font With the Handy Fast and Online Free to Use Italic Text Generator. Case Convertors, bold and italic text"
 type: italic
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'

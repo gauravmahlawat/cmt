@@ -7,7 +7,7 @@ draft: false
 sitemap: true
 ---
 
-# Base64 Converter! Encode & Decode your code with Base64 convertor for free.
+# Base64 Converter! Encode & Decode your code with Base64 converter for free.
 
 {{< rawhtml >}}
 With our free online Base64 Converter, you can effortlessly encode and decode your text or code, enhancing data security and transmission efficiency. Whether you want to protect sensitive information or simply need to convert data for various applications, our user-friendly tool makes the process quick and straightforward. Try it now and experience the convenience of Base64 encoding and decoding at your fingertips.

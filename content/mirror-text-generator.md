@@ -1,6 +1,6 @@
 ---
 title: 'Mirror Text Generator | Text Mirror Converter online'
-description: "how to mirror text in word? font changer, Mirror Text Generator Online for Quick and Free Use? Check Out the Mirror Text Converter at Case Convertors. Find Out More convertor tools here"
+description: "how to mirror text in word? font changer, Mirror Text Generator Online for Quick and Free Use? Check Out the Mirror Text Converter at Case Convertors. Find Out More converter tools here"
 type: mirror
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
