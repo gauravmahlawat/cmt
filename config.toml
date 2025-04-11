@@ -7,3 +7,21 @@
   objectsrc = ["'none'"]
   stylesrc = ["'self'"]
   scriptsrc = ["'self'"]
+uglyURLs = true
+
+[permalinks]
+default = ":filename"
+
+[outputs]
+home = ["HTML", "RSS"]
+page = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+disableKinds = ["taxonomy", "term"]

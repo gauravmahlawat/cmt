@@ -5,6 +5,7 @@
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="shortcut icon" type="image/png" href="{{ "favicon.ico" | relURL }}">
   {{ if .Params.keywords }}
@@ -52,7 +53,6 @@ if (metaDescription) {
 }
   </script>
   {{ end }}
-  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="Yhw2-p4-PevToU2ABB4dxkZa-sDC1WZlfaCg1D3l7BQ" />
 
 </head>
