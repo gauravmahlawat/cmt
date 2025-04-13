@@ -19,7 +19,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3  # Updated to v3
+        uses: actions/configure-pages@v5  # Updated to v3
 
       - name: Build with Hugo
         run: |
@@ -27,7 +27,7 @@ jobs:
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
 
       - name: Upload Pages Artifact
-        uses: actions/upload-artifact@v3  # Updated to v2
+        uses: actions/upload-artifact@v4  # Updated to v2
         with:
           path: ./public
 
@@ -40,4 +40,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Updated to v2
+        uses: actions/deploy-pages@v4  # Updated to v2
