@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master  # Replace with your default branch
+      - master  # Updated to match your default branch
   workflow_dispatch:  # Enable manual runs
 
 jobs:
