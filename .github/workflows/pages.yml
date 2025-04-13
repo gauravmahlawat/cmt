@@ -43,4 +43,5 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo mod get -u
+          hugo
           hugo --debug
