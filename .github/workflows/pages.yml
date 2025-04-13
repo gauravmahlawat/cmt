@@ -18,7 +18,9 @@ jobs:
           sudo dpkg -i hugo.deb
 
       - name: Build
-        run: hugo --minify --baseURL "https://gauravmahlawat.github.io/cmt/"
+        run: |
+          hugo --minify --baseURL "https://caseconvertors.com/"
+          echo "caseconvertors.com" > public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -27,4 +29,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true
-          full_commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
+          keep_files: false
