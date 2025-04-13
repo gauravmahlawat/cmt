@@ -18,13 +18,13 @@ jobs:
           sudo dpkg -i hugo.deb
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://gauravmahlawat.github.io/cmt/"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}  # Must match secret name exactly
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true
-          commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
+          full_commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
