@@ -27,7 +27,7 @@ jobs:
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
 
       - name: Upload Pages Artifact
-        uses: ctions/upload-artifact@v3  # Updated to v2
+        uses: actions/upload-artifact@v3  # Updated to v2
         with:
           path: ./public
 
