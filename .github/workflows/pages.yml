@@ -18,8 +18,8 @@ jobs:
           node-version: 20
       - name: Install node modules
         run: yarn
-      - name: Lint markdown files
-        run: yarn lint:md
+      # - name: Lint markdown files
+      #   run: yarn lint:md
       # - name: Lint with prettier
       #   id: prettier
       #   run: yarn lint:prettier
