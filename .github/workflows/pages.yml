@@ -23,6 +23,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAGES_DEPLOY }}
+          github_token: ${{ secrets.GH_PAT }}  # Must match secret name exactly
           publish_dir: ./public
           publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
