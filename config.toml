@@ -1,3 +1,6 @@
+baseURL = "https://gauravmahlawat.github.io/cmt/"
+publishDir = "public"  # Make sure this exists
+relativeURLs = true    # Helps with GitHub Pages path resolution
 [params.csp]
   childsrc = ["'self'"]
   fontsrc = ["'self'"]
