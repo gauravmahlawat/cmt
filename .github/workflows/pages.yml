@@ -3,8 +3,8 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Replace with your default branch if different
-  workflow_dispatch:  # Add this to enable the "Run workflow" button
+      - master # Replace with your default branch if different
+  workflow_dispatch:  # Enable manual runs
 
 jobs:
   build:
