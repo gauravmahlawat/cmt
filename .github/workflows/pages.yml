@@ -1,46 +1,47 @@
-# name: Build and Deploy
+name: Build and Deploy
 
-# on:
-#   push:
-#     branches:
-#       - master  # Updated to match your default branch
-#   workflow_dispatch:  # Enable manual runs
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v3
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-#       - name: Install Hugo CLI
-#         run: |
-#           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_extended_0.128.0_linux-amd64.deb \
-#           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_extended_0.128.0_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-#       - name: Setup Pages
-#         id: pages
-#         uses: actions/configure-pages@v1
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
 
-#       - name: Build with Hugo
-#         run: |
-#           hugo mod get -u
-#           hugo \
-#             --minify \
-#             --baseURL "${{ steps.pages.outputs.base_url }}"
+      - name: Build with Hugo
+        run: |
+          hugo mod get -u
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}"
 
-#       - name: Upload artifact
-#         uses: actions/upload-pages-artifact@v1
-#         with:
-#           path: ./public
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
 
-#   deploy:
-#     environment:
-#       name: github-pages
-#       url: ${{ steps.deployment.outputs.page_url }}
-#     runs-on: ubuntu-latest
-#     needs: build
-#     steps:
-#       - name: Deploy to GitHub Pages
-#         id: deployment
-#         uses: actions/deploy-pages@v1
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        
