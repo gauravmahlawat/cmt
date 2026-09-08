@@ -3291,3 +3291,147 @@ body {
     padding: 2rem 1.25rem !important;
   }
 }
+
+/* Restore structural rules for the custom header and share rail. */
+.header--left {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+.header .header-menu--level-1 {
+  position: relative;
+}
+
+.header .header-menu--level-1 > span,
+.header .header-menu--level-1 > a {
+  display: block;
+  cursor: pointer;
+}
+
+.header .header-menu--level-1 > ul {
+  position: absolute;
+  z-index: 30;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.header .header-menu--level-1:hover > ul,
+.header .header-menu--level-1:focus-within > ul {
+  display: block;
+}
+
+.primary-nav__button-toggle {
+  display: none;
+}
+
+.share-buttons--title {
+  margin: 0 0 0.6rem;
+  color: var(--glass-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0;
+}
+
+.share-buttons a {
+  display: block;
+  line-height: 0;
+}
+
+.share-buttons img,
+.app-sidebar img {
+  display: block;
+  width: 1.45rem !important;
+  height: 1.45rem !important;
+  max-width: 1.45rem !important;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .header .header-menu {
+    position: fixed;
+    z-index: 30;
+    top: 4.25rem;
+    right: 0.75rem;
+    left: 0.75rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    max-height: calc(100vh - 5rem);
+    padding: 0.75rem;
+    overflow-y: auto;
+    border: 1px solid var(--glass-border);
+    border-radius: 0.85rem;
+    background: rgba(15, 32, 57, 0.96);
+  }
+
+  .header .header-menu.is-active {
+    display: flex;
+  }
+
+  .mobile-buttons {
+    display: block;
+  }
+
+  .mobile-nav-button {
+    display: inline-flex;
+  }
+
+  .header .header-menu--level-1 {
+    display: block;
+    height: auto;
+    padding: 0.65rem !important;
+    white-space: normal;
+  }
+
+  .header .header-menu--level-1 > ul {
+    position: static;
+    display: none;
+    width: auto;
+    margin-top: 0.5rem;
+  }
+
+  .header .header-menu--level-1 > ul.is-active {
+    display: block;
+  }
+
+  .header .header-menu--level-1 > .primary-nav__button-toggle {
+    display: inline-flex;
+    float: right;
+  }
+
+  .app-sidebar {
+    position: static;
+    display: flex;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 0 0.75rem;
+    transform: none !important;
+  }
+
+  .share-buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.55rem;
+  }
+
+  .share-buttons--title {
+    margin: 0 0.5rem 0 0;
+  }
+}
