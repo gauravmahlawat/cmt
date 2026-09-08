@@ -413,6 +413,268 @@ hr {
   }
 }
 
+/* Final component pass: keep custom controls above all earlier theme overrides. */
+.header .header-menu--level-1.about-us .button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.85rem !important;
+  border: 1px solid rgba(116, 213, 255, 0.38) !important;
+  border-radius: 0.55rem !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, #1687d9, #5968ef) !important;
+  box-shadow: 0 6px 16px rgba(41, 113, 211, 0.24) !important;
+  line-height: 1;
+}
+
+.header .header-menu--level-1.about-us .button:hover,
+.header .header-menu--level-1.about-us .button:focus-visible {
+  color: #fff !important;
+  background: linear-gradient(135deg, #0d73c0, #4656d7) !important;
+}
+
+.textarea--controls,
+.textarea--controls .row,
+.textarea--controls textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.textarea--controls textarea {
+  display: block;
+  min-height: 18rem;
+}
+
+.app-sidebar {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem !important;
+  min-height: 12rem;
+  padding: 0.5rem 0.25rem !important;
+  overflow: hidden;
+}
+
+.app-sidebar .rotate,
+.app-sidebar .share-buttons {
+  width: 100%;
+}
+
+.app-sidebar .rotate {
+  transform: none !important;
+}
+
+.app-sidebar .share-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.app-sidebar .share-buttons a {
+  display: block;
+  line-height: 0;
+}
+
+.app-sidebar .share-buttons img {
+  display: block !important;
+  width: 1.45rem !important;
+  height: 1.45rem !important;
+  max-width: 1.45rem !important;
+  object-fit: contain;
+}
+
+.site-footer {
+  overflow: hidden;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+.site-footer__inner .footer-menu {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 4rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__inner .footer-menu > li,
+.site-footer__inner .footer-menu > li > ul {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .app-sidebar {
+    width: 100% !important;
+    min-height: 0;
+  }
+
+  .app-sidebar .share-buttons {
+    flex-direction: row;
+  }
+
+  .site-footer__inner .footer-menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final component sizing and alignment overrides. */
+.header {
+  overflow: visible;
+}
+
+.header .header-menu {
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.header .header-menu--level-1.about-us .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.85rem !important;
+  border: 1px solid rgba(116, 213, 255, 0.38);
+  border-radius: 0.55rem;
+  color: #fff !important;
+  background: linear-gradient(135deg, #1687d9, #5968ef);
+  box-shadow: 0 6px 16px rgba(41, 113, 211, 0.24);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.header .header-menu--level-1.about-us .button:hover,
+.header .header-menu--level-1.about-us .button:focus-visible {
+  color: #fff !important;
+  background: linear-gradient(135deg, #0d73c0, #4656d7);
+  transform: translateY(-1px);
+}
+
+.mobile-nav-button {
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.55rem;
+  color: var(--glass-ink);
+  background: rgba(16, 31, 56, 0.72);
+  cursor: pointer;
+}
+
+.mobile-nav-button__icon {
+  margin-left: 0.45rem;
+}
+
+.app-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem !important;
+  min-height: 12rem;
+  padding: 0.5rem 0.25rem;
+  overflow: hidden;
+}
+
+.app-sidebar .rotate {
+  width: 100%;
+  transform: none !important;
+}
+
+.app-sidebar .share-buttons--title {
+  overflow: hidden;
+  font-size: 0.58rem;
+  white-space: nowrap;
+}
+
+.app-sidebar .share-buttons {
+  width: 100%;
+}
+
+.app-sidebar .share-buttons a,
+.app-sidebar .share-buttons img {
+  flex: 0 0 auto;
+}
+
+.textarea--controls,
+.textarea--controls .row,
+.textarea--controls textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+.textarea--controls textarea {
+  display: block;
+  min-height: 18rem;
+  resize: vertical;
+}
+
+.site-footer {
+  overflow: hidden;
+  color: var(--glass-muted);
+  background: rgba(16, 31, 56, 0.72);
+  border: 1px solid var(--glass-border);
+}
+
+.site-footer__inner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-footer__inner .footer-menu {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__inner .footer-menu > li {
+  min-width: 0;
+  list-style: none;
+}
+
+.site-footer__inner .footer-menu > li > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__inner .footer-menu > li > ul a {
+  color: var(--glass-muted);
+}
+
+.site-footer__inner .footer-menu > li > ul a:hover,
+.site-footer__inner .footer-menu > li > ul a:focus-visible {
+  color: var(--glass-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-footer {
+    background: rgba(28, 28, 30, 0.78);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app-sidebar {
+    width: 100% !important;
+    min-height: 0;
+  }
+
+  .site-footer__inner .footer-menu {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 /* Pearl Frost: a calmer, high-contrast glass system */
 :root {
   --pearl-bg: #edf3f8;
@@ -3433,5 +3695,105 @@ body {
 
   .share-buttons--title {
     margin: 0 0.5rem 0 0;
+  }
+}
+
+/* Ensure the final component sizing wins over all preceding theme passes. */
+.header .header-menu--level-1.about-us .button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.85rem !important;
+  border: 1px solid rgba(116, 213, 255, 0.38) !important;
+  border-radius: 0.55rem !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, #1687d9, #5968ef) !important;
+  box-shadow: 0 6px 16px rgba(41, 113, 211, 0.24) !important;
+  line-height: 1;
+}
+
+.textarea--controls,
+.textarea--controls .row,
+.textarea--controls textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.textarea--controls textarea {
+  display: block;
+  min-height: 18rem;
+}
+
+.app-sidebar {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem !important;
+  min-height: 12rem;
+  padding: 0.5rem 0.25rem !important;
+  overflow: hidden;
+}
+
+.app-sidebar .rotate,
+.app-sidebar .share-buttons {
+  width: 100%;
+}
+
+.app-sidebar .rotate {
+  transform: none !important;
+}
+
+.app-sidebar .share-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.app-sidebar .share-buttons img {
+  display: block !important;
+  width: 1.45rem !important;
+  height: 1.45rem !important;
+  max-width: 1.45rem !important;
+  object-fit: contain;
+}
+
+.site-footer {
+  overflow: hidden;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+.site-footer__inner .footer-menu {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 4rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__inner .footer-menu > li,
+.site-footer__inner .footer-menu > li > ul {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .app-sidebar {
+    width: 100% !important;
+    min-height: 0;
+  }
+
+  .app-sidebar .share-buttons {
+    flex-direction: row;
+  }
+
+  .site-footer__inner .footer-menu {
+    grid-template-columns: 1fr;
   }
 }
