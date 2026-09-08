@@ -24,7 +24,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --minify --baseURL "https://caseconvertors.com/"
+          hugo --minify --baseURL "https://gauravmahlawat.github.io/cmt/"
           echo "caseconvertors.com" > public/CNAME
 
       - name: Deploy
