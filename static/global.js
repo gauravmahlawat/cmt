@@ -60,16 +60,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerMenu = document.querySelector(".mobile-buttons");
     const headerMenuItem = document.querySelector(".header-menu");
 
-    headerMenu.addEventListener("click", function() {
-        headerMenuItem.classList.toggle("is-active");
-    });
+    if (headerMenu && headerMenuItem) {
+        headerMenu.addEventListener("click", function() {
+            headerMenuItem.classList.toggle("is-active");
+        });
+    }
 
     const mobileNavButton = document.querySelector(".mobile-nav-button");
 
-    mobileNavButton.addEventListener("click", function() {
-        const isExpanded = this.getAttribute("aria-expanded") === "false";
-        this.setAttribute("aria-expanded", isExpanded);
-    });
+    if (mobileNavButton) {
+        mobileNavButton.addEventListener("click", function() {
+            const isExpanded = this.getAttribute("aria-expanded") === "false";
+            this.setAttribute("aria-expanded", isExpanded);
+        });
+    }
 
     const expandMobileNavButtons = document.querySelectorAll(".primary-nav__button-toggle");
     const mobileShowMenusl1 = document.querySelectorAll(".header-menu--level-1");
@@ -90,4 +94,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
-

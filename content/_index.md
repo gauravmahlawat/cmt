@@ -1,6 +1,6 @@
 ---
-title: Convert upper case to lower case Online tool
-description: "how to convert lowercase to uppercase, camel case, convert to small case, how to convert lower case to upper case in excel, sentence case, convert camel case to snake case. converter case"
+title: Free Online Case Converter | Change Text to Uppercase, Lowercase and More
+description: "Convert text to uppercase, lowercase, sentence case, title case and more with this free online case converter. Paste your text, choose a format and copy the result instantly."
 type: page
 draft: false
 sitemap: true

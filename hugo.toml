@@ -1,8 +1,41 @@
 languageCode = 'en-us'
-title = 'Case Convertors'
+title = 'Case Convertors | Free Text, Code and Unit Converters'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
 enableRobotsTXT = true
+baseURL = 'https://gauravmahlawat.github.io/cmt/'
+publishDir = 'public'
+relativeURLs = false
+uglyURLs = false
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Free online text, code and unit conversion tools, including case converters, stylish text generators, developer utilities and measurement converters.'
+
+[params.csp]
+    childsrc = ["'self'"]
+    fontsrc = ["'self'"]
+    formaction = ["'self'"]
+    framesrc = ["'self'"]
+    imgsrc = ["'self'"]
+    objectsrc = ["'none'"]
+    stylesrc = ["'self'"]
+    scriptsrc = ["'self'"]
+
+[permalinks]
+      default = ':filename'
+
+[outputs]
+    home = ['HTML', 'RSS']
+    page = ['HTML']
+    section = ['HTML']
+    taxonomy = ['HTML']
+    term = ['HTML']
+
+[sitemap]
+    changefreq = 'weekly'
+    priority = 0.5
+    filename = 'sitemap.xml'
 
 [module]
 [[module.imports]]

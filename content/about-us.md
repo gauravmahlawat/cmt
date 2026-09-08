@@ -1,7 +1,7 @@
 ---
-title: 'About US Online Free tool'
-description: "Unlock creativity with our text conversion & unit converter tools. Generate stylish fonts, transform text, & simplify conversions. Explore now!"
-type: length
+title: 'About Case Convertors | Free Online Conversion Tools'
+description: "Learn about Case Convertors, a free collection of text, code and unit conversion tools for writers, developers, designers and everyday tasks."
+type: page
 keywords: 'online course for, Content Writer, Graphic Designer, Web Developer, Software Engineer, Frontend Developer graphic designer, UI designer, digital marketing'
 draft: false
 sitemap: true
