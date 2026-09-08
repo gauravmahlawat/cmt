@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gauravmahlawat.github.io/cmt/sitemap.xml

@@ -1,0 +1,15 @@
+{
+  "name": "Case Convertors | Free Text, Code and Unit Converters",
+  "short_name": "Case Convertors | Free Text, Code and Unit Converters",
+  "start_url": "/cmt/",
+  "scope": "/cmt/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/cmt/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
