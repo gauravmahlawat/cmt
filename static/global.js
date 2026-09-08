@@ -57,40 +57,29 @@ function readingTime() {
 readingTime();
 
 document.addEventListener("DOMContentLoaded", function() {
-    const headerMenu = document.querySelector(".mobile-buttons");
     const headerMenuItem = document.querySelector(".header-menu");
-
-    if (headerMenu && headerMenuItem) {
-        headerMenu.addEventListener("click", function() {
-            headerMenuItem.classList.toggle("is-active");
-        });
-    }
-
     const mobileNavButton = document.querySelector(".mobile-nav-button");
 
-    if (mobileNavButton) {
+    if (mobileNavButton && headerMenuItem) {
         mobileNavButton.addEventListener("click", function() {
             const isExpanded = this.getAttribute("aria-expanded") === "false";
             this.setAttribute("aria-expanded", isExpanded);
+            headerMenuItem.classList.toggle("is-active", isExpanded);
         });
     }
 
-    const expandMobileNavButtons = document.querySelectorAll(".primary-nav__button-toggle");
-    const mobileShowMenusl1 = document.querySelectorAll(".header-menu--level-1");
-    const mobileShowMenus = document.querySelectorAll(".header-menu--level-1 ul");
+    document.querySelectorAll(".header-menu--level-1").forEach(function(menuItem) {
+        const expandButton = menuItem.querySelector(".primary-nav__button-toggle");
+        const submenu = menuItem.querySelector(":scope > ul");
 
-    mobileShowMenusl1.forEach((button, index) => {
-        button.addEventListener("click", function() {
-            // Find the corresponding expand button within the clicked menu
-            const expandButton = this.querySelector(".primary-nav__button-toggle");
-            
-            if (expandButton) {
-                const isExpanded = expandButton.getAttribute("aria-expanded") === "false";
-                expandButton.setAttribute("aria-expanded", isExpanded);
-                mobileShowMenus[index].classList.toggle("is-active");
-            }
-        });
+        if (expandButton && submenu) {
+            expandButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const isExpanded = this.getAttribute("aria-expanded") === "false";
+                this.setAttribute("aria-expanded", isExpanded);
+                submenu.classList.toggle("is-active", isExpanded);
+            });
+        }
     });
-
-
 });

@@ -524,6 +524,83 @@ hr {
   }
 }
 
+/* Final responsive navigation and icon normalization. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.share-buttons a,
+.share-buttons a:hover,
+.share-buttons a:focus,
+.share-buttons a:focus-visible {
+  display: block !important;
+  width: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.share-buttons img,
+.app-sidebar img,
+.header .icon--menu-toggle,
+.mobile-nav-button__icon {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.share-buttons img,
+.app-sidebar img {
+  width: 1.45rem !important;
+  height: 1.45rem !important;
+  max-width: 1.45rem !important;
+  object-fit: contain;
+}
+
+.header .icon--menu-toggle {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+@media screen and (min-width: 901px) {
+  .mobile-buttons,
+  .mobile-nav-button {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-buttons {
+    display: block !important;
+  }
+
+  .mobile-nav-button {
+    display: inline-flex !important;
+  }
+
+  .header .header-menu {
+    display: none !important;
+  }
+
+  .header .header-menu.is-active {
+    display: flex !important;
+  }
+
+  .header .header-menu--level-1 > .visually-hidden {
+    position: absolute !important;
+  }
+}
+
 /* Keep the mobile navigation control scoped to mobile screens. */
 .mobile-buttons,
 .mobile-nav-button {
