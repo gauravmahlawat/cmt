@@ -24,6 +24,7 @@ jobs:
 
       - name: Build
         run: |
+          hugo mod get github.com/alex-shpak/hugo-book@162c806e991b63d8a8bbfcd1c8d41ad650ebd07e
           hugo --minify --baseURL "https://gauravmahlawat.github.io/cmt/"
 
       - name: Deploy
