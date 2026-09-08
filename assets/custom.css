@@ -524,6 +524,40 @@ hr {
   }
 }
 
+/* Keep the mobile navigation control scoped to mobile screens. */
+.mobile-buttons,
+.mobile-nav-button {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-buttons {
+    display: block !important;
+    margin-left: auto;
+  }
+
+  .mobile-nav-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 0.55rem;
+    color: var(--glass-ink);
+    background: rgba(16, 31, 56, 0.78);
+    cursor: pointer;
+  }
+
+  .header .header-menu {
+    display: none !important;
+  }
+
+  .header .header-menu.is-active {
+    display: flex !important;
+  }
+}
+
 /* Final component sizing and alignment overrides. */
 .header {
   overflow: visible;
